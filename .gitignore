@@ -1,0 +1,84 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+#added by me
+
+
+#################################
+# Spring Boot Config / Secrets
+#################################
+# Do NOT commit real credentials
+application.properties
+application.yml
+application-*.yml
+
+#################################
+# Environment Variables
+#################################
+.env
+.env.*
+!.env.example
+
+#################################
+# MySQL
+#################################
+# SQL dumps & local DB files
+*.sql
+*.sqlite
+*.db
+
+# MySQL config overrides
+my.cnf
+my.ini
+
+#################################
+# Logs
+#################################
+*.log
+logs/
+
+#################################
+# OS files
+#################################
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
