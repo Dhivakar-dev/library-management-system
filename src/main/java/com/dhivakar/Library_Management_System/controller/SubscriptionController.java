@@ -4,6 +4,7 @@ package com.dhivakar.Library_Management_System.controller;
 import com.dhivakar.Library_Management_System.exception.SubscriptionException;
 import com.dhivakar.Library_Management_System.payload.dto.SubscriptionDTO;
 import com.dhivakar.Library_Management_System.payload.response.ApiResponse;
+import com.dhivakar.Library_Management_System.payload.response.PaymentInitiateResponse;
 import com.dhivakar.Library_Management_System.service.SubscriptionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -26,7 +27,7 @@ public class SubscriptionController {
     public ResponseEntity<?> subscribe(
              @RequestBody SubscriptionDTO subscription
     ) throws Exception {
-        SubscriptionDTO dto = subscriptionService.subscribe(subscription);
+        PaymentInitiateResponse dto = subscriptionService.subscribe(subscription);
         return ResponseEntity.ok(dto);
     }
 
