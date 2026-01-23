@@ -1,5 +1,6 @@
 package com.dhivakar.Library_Management_System.service;
 
+import com.dhivakar.Library_Management_System.modal.SubscriptionPlan;
 import com.dhivakar.Library_Management_System.payload.dto.SubscriptionPlanDTO;
 
 import java.util.List;
@@ -13,4 +14,6 @@ public interface SubscriptionPlanService {
     void deleteSubscriptionPlan(Long planId) throws Exception;
 
     List<SubscriptionPlanDTO> getAllSubscriptionPlan();
+
+    SubscriptionPlan getBySubscriptionPlanCode(String planCode) throws Exception;
 }
