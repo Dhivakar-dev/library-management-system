@@ -9,4 +9,5 @@ public interface UserService {
 
     public User getCurrentUser() throws Exception;
     public List<UserDTO> getAllUsers();
+    User findById(Long id) throws Exception;
 }
